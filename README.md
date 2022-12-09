@@ -26,6 +26,6 @@ When the logged in user is on an individual listings page of their own, then the
 
 TODO
 
-#### Databases per page
+### Databases per page
 
 TODO
