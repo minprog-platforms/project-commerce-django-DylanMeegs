@@ -24,8 +24,26 @@ When the logged in user is on an individual listings page of their own, then the
 
 ### Class Diagram
 
-TODO
+There will be four main models for this website:
+- The User class - This contains the information of the user if they're logged in.
+- The Bid class - This contains all the information of a bit on a listing, but also of the user that placed it.
+- The Comment class - This contains all the information of the comments on a listing, but also of the user that placed it.
+- The Listing class - This contains all the information of a listing, but also information of the user that placed it, the comments made on the listing and the bids made on the listing.
 
 ### Databases per page
 
-TODO
+#### Active listings
+
+This page will use the listings model.
+
+#### Create listing
+
+This page will use the listings model.
+
+#### Listing page
+
+This page will use the listings, bids, and comments models.
+
+#### Watchlist
+
+This page will use the Listings model.
