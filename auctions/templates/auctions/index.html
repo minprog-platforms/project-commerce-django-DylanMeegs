@@ -2,6 +2,16 @@
 
 {% block body %}
     <h2>Active Listings</h2>
+    <form action="{% url 'displayCategory' %}" method="POST">
+        {% csrf_token %}
+        <label for='category'>Choose a category</label>
+            <select name="category" id="category">
+                {% for cat in categories %}
+                    <option value="{{ cat }}">  {{ cat }} </option>
+                {% endfor %}
+            </select>
+        <button type="submit" class="btn btn-warning">Select</button>
+    </form>
     <div class="row mx-3">
         {% for listing in Listings %}
             <div class="card mx-3" style="width: 18rem; padding-top: 12px;">
@@ -11,7 +21,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ listing.title}}</h5>
                     <p class="card-text">{{ listing.description }}</p>
-                    <p id="bid">Current bid: <span id="price">{{ listing.price }}</span></p>
+                    <p id="bid">Current bid: <span id="price">€{{ listing.price.bid }}</span></p>
                     <a href="{% url 'listing' id=listing.id %}" class="btn btn-primary">Details</a>
                 </div>
             </div>
