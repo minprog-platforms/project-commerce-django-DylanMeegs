@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.db import IntegrityError
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.contrib import messages
 
@@ -112,7 +112,14 @@ def addComment(request, id):
 
         newComment.save()
 
-        return HttpResponseRedirect(reverse("listing", args=(id,)))
+        return render(request, "auctions/listing.html",{
+            "listing": listingData,
+            "message": "Comment is posted!",
+            "update": True,
+            "isOwner": isOwner,
+            "isListingInWatchlist": isListingInWatchlist,
+            "allComments": allComments
+        })
 
 def addBid(request, id):
     newBid = request.POST['newBid']
