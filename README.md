@@ -47,7 +47,7 @@ There will be five main models for this website:
 
 - The Listing class - This contains all the information of a listing, namely the title of the listing, the description of the listing, the image of the listing, the price it has, if the listing is active, who is the owner, which category is it in and if it is on the watchlist of the user that is viewing the listing.
 
-![Overview](images/ClassDiagram.png)
+![Overview](Images/ClassDiagram.png)
 
 ### Databases per page
 
