@@ -12,11 +12,11 @@ To get started with this website, you must download the code from this repositor
 The text below displays the general workflow of MeegsBay:
 The default page is the active listings page. On this page you can see all the active listings if there are any. On this page there is also a dropdown menu for filtering the active listings on category.
 
-![Overview](Images/Categories.png)
+![Overview](Images/Index.png)
 
 The listings themselves show the image of the listing, if any, the title, description, current price, a details button which links to the listing page, and the category it is in.
 
-![Overview](Images/Index.png)
+![Overview](Images/Categories.png)
 
 The header of the website changes whether the user is logged in or not.
 
