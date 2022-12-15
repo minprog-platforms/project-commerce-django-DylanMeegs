@@ -4,12 +4,13 @@ Website that allows users to create listings. Others can then view those listing
 
 ## Getting started
 
-To get started with this website, you must download the code from this repository, and run python3 manage.py runserver in the terminal. If you want to start your own database, you need to create a superuser with the following command in the terminal python3 manage.py createsuperuser. Once that is done, you can go to the admin and create categories, so you can start creating listings (The site does not come with categories if you do not have a database containing the categories and the site will produce errors if you create a listing without a category.)
+To get started with this website, you must download the code from this repository, and run "python3 manage.py runserver" in the terminal. If you want to start your own database, you need to create a superuser with the following command in the terminal "python3 manage.py createsuperuser". Once that is done, you can go to the admin and create categories, so you can start creating listings (The site does not come with categories if you do not have a database containing the categories and the site will produce errors if you create a listing without a category.)
 
 
 ## Workflow
 
-The image below displays the general workflow of MeegsBay. The default page is the active listings page. On this page you can see all the active listings if there are any. On this page there is also a dropdown menu for filtering the active listings on category. The listings themselves show the image of the listing, if any, the title, description, current price, a details button which links to the listing page, and the category it is in.
+The text below displays the general workflow of MeegsBay:
+The default page is the active listings page. On this page you can see all the active listings if there are any. On this page there is also a dropdown menu for filtering the active listings on category. The listings themselves show the image of the listing, if any, the title, description, current price, a details button which links to the listing page, and the category it is in.
 
 The header of the website changes whether the user is logged in or not.
 
@@ -21,14 +22,12 @@ Creating a listing goes as follows: You click on "Create New Listing" in the nav
 
 Viewing your watchlist goed as follows: You click on "Watchlist" in the navbar, and there you see every listing you have added to the watchlist, even if the listing has been closed.
 
-When you are on a listing page you see the title, image, description, owner of the listing, current price, and comments.
+When you are on a listing page you see the title, image, description, owner of the listing, current price, and the comments.
 
 However, that is not all. On top of this, if the user is signed in they can also access parts of the website that were previously locked. Such as:
-- Add listings to their watchlist
+- An "add listings to watchlist" button
 - Bid on active listings
 - Comment on active listings
-
-And if the owner of the listing is on the listing page, they can close the listing and "sell" the listing to the hightest bidder.
 
 Lastly, the "Log in" button changed to "Log out" and the user is immediately logged out, and returned to the main page upon clicking this button.
 
