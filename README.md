@@ -22,7 +22,12 @@ The header of the website changes whether the user is logged in or not.
 
 ![Overview](Images/Login.png)
 
-When the user **is not** logged in, the user has the option to register, to log in or to view the active listings. On the active listings page, the user can also access the individual listings. However, some parts of the individual listing page are not visible when a user is not logged in. Parts such as the bidding option, commenting option and the option to add the listing to the watchlist are not yet present.
+When the user **is not** logged in, the user has the option to register, to log in or to view the active listings. If the user does not have an account yet, they can register on the register page.
+
+![Overview](Images/Register.png)
+
+
+On the active listings page, the user can also access the individual listings. However, some parts of the individual listing page are not visible when a user is not logged in. Parts such as the bidding option, commenting option and the option to add the listing to the watchlist are not yet present.
 
 ![Overview](Images/ListingNSI.png)
 
